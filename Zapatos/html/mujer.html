@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOLÉ — Mujer</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Nav -->
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo">SOLÉ</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link">Inicio</a></li>
+      <li><a href="hombre.html" class="nav-link">Hombre</a></li>
+      <li><a href="mujer.html" class="nav-link active">Mujer</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="carrito.html" class="nav-btn nav-cart-link" aria-label="Carrito">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero-bg">
+      <div class="orb orb1"></div>
+      <div class="orb orb2"></div>
+    </div>
+    <div class="page-hero-content reveal-up">
+      <span class="section-tag">— Colección —</span>
+      <h1 class="page-hero-title">Mujer</h1>
+      <p>Piezas que celebran la feminidad con elegancia y carácter propio.</p>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="products-section">
+    <div class="filter-tabs reveal-up">
+      <button class="filter-btn active" data-cat="all">Todos</button>
+      <button class="filter-btn" data-cat="luxury">Luxury</button>
+      <button class="filter-btn" data-cat="sport">Sport</button>
+      <button class="filter-btn" data-cat="casual">Casual</button>
+    </div>
+
+    <div class="products-grid" id="productsGrid">
+
+      <div class="product-card" data-cat="luxury" data-id="m1" data-name="Velvet Noir Heel" data-price="420" data-emoji="👠">
+        <div class="card-media">
+          <div class="card-emoji">👠</div>
+          <div class="card-badge">Nuevo</div>
+          <div class="card-overlay">
+            <button class="quick-add" data-id="m1">+ Añadir al carrito</button>
+          </div>
+          <div class="card-actions">
+            <button class="card-wish">♡</button>
+            <button class="card-view" data-id="m1">⊕</button>
+          </div>
+        </div>
+        <div class="card-info">
+          <span class="card-cat">Luxury</span>
+          <h3 class="card-name">Velvet Noir Heel</h3>
+          <div class="card-bottom">
+            <span class="card-price">$420</span>
+            <div class="card-stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="luxury" data-id="m2" data-name="Satin Gold Mule" data-price="520" data-emoji="🩴">
+        <div class="card-media">
+          <div class="card-emoji">🩴</div>
+          <div class="card-badge">Exclusivo</div>
+          <div class="card-overlay">
+            <button class="quick-add" data-id="m2">+ Añadir al carrito</button>
+          </div>
+          <div class="card-actions">
+            <button class="card-wish">♡</button>
+            <button class="card-view" data-id="m2">⊕</button>
+          </div>
+        </div>
+        <div class="card-info">
+          <span class="card-cat">Luxury</span>
+          <h3 class="card-name">Satin Gold Mule</h3>
+          <div class="card-bottom">
+            <span class="card-price">$520</span>
+            <div class="card-stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="sport" data-id="m3" data-name="FlexRun Femme" data-price="165" data-emoji="👟">
+        <div class="card-media">
+          <div class="card-emoji">👟</div>
+          <div class="card-overlay">
+            <button class="quick-add" data-id="m3">+ Añadir al carrito</button>
+          </div>
+          <div class="card-actions">
+            <button class="card-wish">♡</button>
+            <button class="card-view" data-id="m3">⊕</button>
+          </div>
+        </div>
+        <div class="card-info">
+          <span class="card-cat">Sport</span>
+          <h3 class="card-name">FlexRun Femme</h3>
+          <div class="card-bottom">
+            <span class="card-price">$165</span>
+            <div class="card-stars">★★★★☆</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="casual" data-id="m4" data-name="Linen Slip-On" data-price="98" data-emoji="🥿">
+        <div class="card-media">
+          <div class="card-emoji">🥿</div>
+          <div class="card-badge sale">-15%</div>
+          <div class="card-overlay">
+            <button class="quick-add" data-id="m4">+ Añadir al carrito</button>
+          </div>
+          <div class="card-actions">
+            <button class="card-wish">♡</button>
+            <button class="card-view" data-id="m4">⊕</button>
+          </div>
+        </div>
+        <div class="card-info">
+          <span class="card-cat">Casual</span>
+          <h3 class="card-name">Linen Slip-On</h3>
+          <div class="card-bottom">
+            <span class="card-price">$98</span>
+            <div class="card-stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="luxury" data-id="m5" data-name="Pearl Stiletto" data-price="480" data-emoji="👠">
+        <div class="card-media">
+          <div class="card-emoji">👠</div>
+          <div class="card-overlay">
+            <button class="quick-add" data-id="m5">+ Añadir al carrito</button>
+          </div>
+          <div class="card-actions">
+            <button class="card-wish">♡</button>
+            <button class="card-view" data-id="m5">⊕</button>
+          </div>
+        </div>
+        <div class="card-info">
+          <span class="card-cat">Luxury</span>
+          <h3 class="card-name">Pearl Stiletto</h3>
+          <div class="card-bottom">
+            <span class="card-price">$480</span>
+            <div class="card-stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="casual" data-id="m6" data-name="Suede Chelsea" data-price="210" data-emoji="👢">
+        <div class="card-media">
+          <div class="card-emoji">👢</div>
+          <div class="card-overlay">
+            <button class="quick-add" data-id="m6">+ Añadir al carrito</button>
+          </div>
+          <div class="card-actions">
+            <button class="card-wish">♡</button>
+            <button class="card-view" data-id="m6">⊕</button>
+          </div>
+        </div>
+        <div class="card-info">
+          <span class="card-cat">Casual</span>
+          <h3 class="card-name">Suede Chelsea</h3>
+          <div class="card-bottom">
+            <span class="card-price">$210</span>
+            <div class="card-stars">★★★★☆</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Product Modal -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="product-modal" id="productModal">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div class="modal-emoji" id="modalEmoji">👠</div>
+      <div class="modal-info">
+        <span class="modal-cat" id="modalCat">Categoría</span>
+        <h2 class="modal-name" id="modalName">Nombre del Producto</h2>
+        <p class="modal-price" id="modalPrice">$000</p>
+        <p class="modal-desc">Diseñado con los mejores materiales para ofrecerte comodidad y estilo inigualables.</p>
+        <div class="modal-sizes">
+          <span class="size-label">Talla:</span>
+          <div class="size-options" id="sizeOptions">
+            <button class="size-btn active">36</button>
+            <button class="size-btn">37</button>
+            <button class="size-btn">38</button>
+            <button class="size-btn">39</button>
+            <button class="size-btn">40</button>
+            <button class="size-btn">41</button>
+          </div>
+        </div>
+        <button class="btn-primary full-width magnetic" id="modalAddCart">Añadir al Carrito</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast">
+    <span class="toast-icon">✓</span>
+    <span class="toast-msg" id="toastMsg">Producto añadido al carrito</span>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-bottom" style="border-top:1px solid rgba(255,255,255,0.06); padding: 2rem 4rem; display:flex; justify-content:space-between;">
+      <span>© 2026 SOLÉ. Todos los derechos reservados.</span>
+      <span>Hecho con ♥ para los amantes del calzado</span>
+    </div>
+  </footer>
+
+  <script src="../js/app.js"></script>
+</body>
+</html>

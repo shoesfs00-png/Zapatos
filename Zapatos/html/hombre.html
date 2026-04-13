@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOLÉ — Hombre</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Nav -->
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo">SOLÉ</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link">Inicio</a></li>
+      <li><a href="hombre.html" class="nav-link active">Hombre</a></li>
+      <li><a href="mujer.html" class="nav-link">Mujer</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="carrito.html" class="nav-btn nav-cart-link" aria-label="Carrito">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero-bg">
+      <div class="orb orb1"></div>
+      <div class="orb orb2"></div>
+    </div>
+    <div class="page-hero-content reveal-up">
+      <span class="section-tag">— Colección —</span>
+      <h1 class="page-hero-title">Hombre</h1>
+      <p>Diseños que combinan elegancia y funcionalidad para el hombre moderno.</p>
+    </div>
+  </section>
+
+  <!-- Filter Tabs -->
+  <section class="products-section">
+    <div class="filter-tabs reveal-up">
+      <button class="filter-btn active" data-cat="all">Todos</button>
+      <button class="filter-btn" data-cat="formal">Formal</button>
+      <button class="filter-btn" data-cat="sport">Sport</button>
+      <button class="filter-btn" data-cat="casual">Casual</button>
+    </div>
+
+    <div class="products-grid" id="productsGrid">
+
+      <div class="product-card" data-cat="formal" data-id="h1" data-name="Oxford Classique" data-price="290" data-emoji="👞">
+        <div class="card-media">
+          <div class="card-emoji">👞</div>
+          <div class="card-badge">Nuevo</div>
+          <div class="card-overlay">
+            <button class="quick-add" data-id="h1">+ Añadir al carrito</button>
+          </div>
+          <div class="card-actions">
+            <button class="card-wish">♡</button>
+            <button class="card-view" data-id="h1">⊕</button>
+          </div>
+        </div>
+        <div class="card-info">
+          <span class="card-cat">Formal</span>
+          <h3 class="card-name">Oxford Classique</h3>
+          <div class="card-bottom">
+            <span class="card-price">$290</span>
+            <div class="card-stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="sport" data-id="h2" data-name="AeroRun Pro" data-price="185" data-emoji="👟">
+        <div class="card-media">
+          <div class="card-emoji">👟</div>
+          <div class="card-overlay">
+            <button class="quick-add" data-id="h2">+ Añadir al carrito</button>
+          </div>
+          <div class="card-actions">
+            <button class="card-wish">♡</button>
+            <button class="card-view" data-id="h2">⊕</button>
+          </div>
+        </div>
+        <div class="card-info">
+          <span class="card-cat">Sport</span>
+          <h3 class="card-name">AeroRun Pro</h3>
+          <div class="card-bottom">
+            <span class="card-price">$185</span>
+            <div class="card-stars">★★★★☆</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="casual" data-id="h3" data-name="Canvas Drift" data-price="110" data-emoji="🥿">
+        <div class="card-media">
+          <div class="card-emoji">🥿</div>
+          <div class="card-badge sale">-20%</div>
+          <div class="card-overlay">
+            <button class="quick-add" data-id="h3">+ Añadir al carrito</button>
+          </div>
+          <div class="card-actions">
+            <button class="card-wish">♡</button>
+            <button class="card-view" data-id="h3">⊕</button>
+          </div>
+        </div>
+        <div class="card-info">
+          <span class="card-cat">Casual</span>
+          <h3 class="card-name">Canvas Drift</h3>
+          <div class="card-bottom">
+            <span class="card-price">$110</span>
+            <div class="card-stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="formal" data-id="h4" data-name="Derby Noir" data-price="320" data-emoji="👞">
+        <div class="card-media">
+          <div class="card-emoji">👞</div>
+          <div class="card-overlay">
+            <button class="quick-add" data-id="h4">+ Añadir al carrito</button>
+          </div>
+          <div class="card-actions">
+            <button class="card-wish">♡</button>
+            <button class="card-view" data-id="h4">⊕</button>
+          </div>
+        </div>
+        <div class="card-info">
+          <span class="card-cat">Formal</span>
+          <h3 class="card-name">Derby Noir</h3>
+          <div class="card-bottom">
+            <span class="card-price">$320</span>
+            <div class="card-stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="sport" data-id="h5" data-name="Trail Beast X" data-price="145" data-emoji="🥾">
+        <div class="card-media">
+          <div class="card-emoji">🥾</div>
+          <div class="card-overlay">
+            <button class="quick-add" data-id="h5">+ Añadir al carrito</button>
+          </div>
+          <div class="card-actions">
+            <button class="card-wish">♡</button>
+            <button class="card-view" data-id="h5">⊕</button>
+          </div>
+        </div>
+        <div class="card-info">
+          <span class="card-cat">Sport</span>
+          <h3 class="card-name">Trail Beast X</h3>
+          <div class="card-bottom">
+            <span class="card-price">$145</span>
+            <div class="card-stars">★★★★☆</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="casual" data-id="h6" data-name="Urban Loafer" data-price="135" data-emoji="🥿">
+        <div class="card-media">
+          <div class="card-emoji">🥿</div>
+          <div class="card-badge">Exclusivo</div>
+          <div class="card-overlay">
+            <button class="quick-add" data-id="h6">+ Añadir al carrito</button>
+          </div>
+          <div class="card-actions">
+            <button class="card-wish">♡</button>
+            <button class="card-view" data-id="h6">⊕</button>
+          </div>
+        </div>
+        <div class="card-info">
+          <span class="card-cat">Casual</span>
+          <h3 class="card-name">Urban Loafer</h3>
+          <div class="card-bottom">
+            <span class="card-price">$135</span>
+            <div class="card-stars">★★★★☆</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Product Modal -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="product-modal" id="productModal">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div class="modal-emoji" id="modalEmoji">👟</div>
+      <div class="modal-info">
+        <span class="modal-cat" id="modalCat">Categoría</span>
+        <h2 class="modal-name" id="modalName">Nombre del Producto</h2>
+        <p class="modal-price" id="modalPrice">$000</p>
+        <p class="modal-desc">Diseñado con los mejores materiales para ofrecerte comodidad y estilo inigualables.</p>
+        <div class="modal-sizes">
+          <span class="size-label">Talla:</span>
+          <div class="size-options" id="sizeOptions">
+            <button class="size-btn active">39</button>
+            <button class="size-btn">40</button>
+            <button class="size-btn">41</button>
+            <button class="size-btn">42</button>
+            <button class="size-btn">43</button>
+            <button class="size-btn">44</button>
+          </div>
+        </div>
+        <button class="btn-primary full-width magnetic" id="modalAddCart">Añadir al Carrito</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast">
+    <span class="toast-icon">✓</span>
+    <span class="toast-msg" id="toastMsg">Producto añadido al carrito</span>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-bottom" style="border-top:1px solid rgba(255,255,255,0.06); padding: 2rem 4rem; display:flex; justify-content:space-between;">
+      <span>© 2026 SOLÉ. Todos los derechos reservados.</span>
+      <span>Hecho con ♥ para los amantes del calzado</span>
+    </div>
+  </footer>
+
+  <script src="../js/app.js"></script>
+</body>
+</html>
